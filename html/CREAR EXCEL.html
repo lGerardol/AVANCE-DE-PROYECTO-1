@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla</title>
+    <link rel="stylesheet" href="excel.css">
+    <!-- LETRA -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <style>
+        /* Estilo para resaltar la fila seleccionada */
+        .selected {
+            background-color: #007BFF;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <!-- hay que arreglar los espacios entre el título y la imagen de salida ajaja -->
+    <header class="header">
+        <div class="content_header">
+            <img src="../img/Logo.png" alt="logo" class="img_logo">
+            <h1 class="title">la bodeguita</h1>
+        </div>
+        <img src="../img/Salida.png" alt="btn_salida" class="img_salida">
+    </header>
+
+    <section class "section">
+        <center>
+        <table>
+            <!-- Columnas -->
+            
+            <thead>
+                <tr>
+                    <th>Seleccionar</th> <!-- Nueva columna para los checkboxes -->
+                    <th>ID</th>
+                    <th>Producto</th>
+                    <th>Precio</th>
+                    <th>Cant. Vendidas</th>
+                    <th>Descripción</th>
+                    <th>Categoría</th>
+                </tr>
+            </thead>
+            <!-- DATOS -->
+            <tbody>
+                <tr>
+                    <td><input class="chek" type="checkbox"></td> <!-- Nuevo campo de selección con checkbox -->
+                    <td>0051454</td>
+                    <td>Pechuga de pollo</td>
+                    <td>$3.00</td>
+                    <td>201</td>
+                    <td>Pollo Indio</td>
+                    <td>Carne</td>
+                </tr>
+                <tr>
+                    <td><input class="chek" type="checkbox"></td> <!-- Nuevo campo de selección con checkbox -->
+                    <td>0051454</td>
+                    <td>Pechuga de pollo</td>
+                    <td>$3.00</td>
+                    <td>201</td>
+                    <td>Pollo Indio</td>
+                    <td>Carne</td>
+                </tr>
+                <tr>
+                    <td><input class="chek" type="checkbox"></td> <!-- Nuevo campo de selección con checkbox -->
+                    <td>0051454</td>
+                    <td>Pechuga de pollo</td>
+                    <td>$3.00</td>
+                    <td>201</td>
+                    <td>Pollo Indio</td>
+                    <td>Carne</td>
+                </tr>
+                <!-- Otras filas de datos -->
+            </tbody>
+        </table></center>
+    </section>
+    <div class="btns">
+        <button class="btnExport">Crear excel</button>
+    </div>
+
+    <script>
+        // Obtener todas las filas de la tabla
+        const rows = document.querySelectorAll('tbody tr');
+
+        // Agregar un controlador de eventos clic a cada fila
+        rows.forEach(row => {
+            row.addEventListener('click', () => {
+                // Alternar la clase 'selected' en la fila seleccionada
+                row.classList.toggle('selected');
+            });
+        });
+    </script>
+</body>
+</html>

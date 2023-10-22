@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(0, 0, 63);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.header{
+    width: 100%;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+}
+.content_header{
+    display: flex;
+    align-items: center;
+}
+.title{
+    text-transform: uppercase;
+}
+.img_logo{
+    width: 200px;
+    height: 80px;
+}
+
+.img_salida{
+    width: 30px;
+    height: 30px;
+}
+.section{
+    width: 100%;
+    /*le damos un max para asi evitar desbordamiento*/
+    max-height: 430px;
+    overflow: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+table {
+    border-collapse: collapse;
+    width: 90%; 
+    border: 3px solid white;
+    
+  }
+  
+thead, th{
+    background-color: rgb(58, 77, 184);
+    border-left:3px solid rgba(141, 135, 135, 0.596);
+    color: white;
+    padding: 10px;
+}
+tbody, td{
+    background:white;
+    text-align: center;
+    margin: 5px;
+    padding: 5px; 
+   
+    border-left:3px solid rgb(141, 135, 135);
+}
+
+.btns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin: 20px;
+}
+
+.btns .btnModi{
+    padding: 15px;
+    width: 150px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    color: white;
+    background: orange;
+    cursor: pointer;
+}
+
+ .btns .btnExport{
+    padding: 15px;
+    width: 150px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+    background-color: rgb(58, 77, 184);
+}
+
+.btnModificar{
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    width: 80px;
+    height: 30px;
+    size: 100px;
+    background-color:#006A6E;
+    border-radius: 10px;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+}
+.btnEliminar{
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    width: 25px;
+    height: 25px;
+    size: 25px;
+    background-color:red;
+    border-radius: 20px;
+    border: none;
+    text-align: center;
+    
+}
+
+.btns .btnModi{
+    
+    background-color: #41E33C ;
+}
+.chek{
+    background-color: #41E33C;
+}
